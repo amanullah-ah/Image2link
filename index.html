@@ -1,0 +1,69 @@
+)<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMAGE HOST | DEVELOPED BY AMAN ULLAH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@700&family=Nova+Square&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+
+<div class="page">
+  <div class="brand">
+    <img class="my-logo" src="logo.png" alt="Aman" width="110" height="110">
+    <h1>AMAN IMAGE HOST</h1>
+    <p>Upload Image-Chose Api-Get Link</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="mini-drop"></span>Upload &amp; Get Link</h2>
+
+    <!-- Upar ek line me 3 button, har ek ki alag API file -->
+    <div class="prov-row">
+      <button class="prov-btn" data-p="imgbb"><span>ImgBB</span><small>API 1</small></button>
+      <button class="prov-btn" data-p="catbox"><span>Catbox</span><small>API 2</small></button>
+      <button class="prov-btn" data-p="cloudinary"><span>Cloudinary</span><small>API 3</small></button>
+    </div>
+
+    <!-- Ek hi input -->
+    <input type="file" id="fileInput" accept="image/*" style="display:none">
+    <p class="label">Your image</p>
+    <div class="stage source" id="source" role="button" tabindex="0" aria-label="Choose an image">
+      <div class="empty">
+        <svg class="gel-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M12 4 7 9M12 4l5 5"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+        <span>Tap to choose an image</span>
+        <small>Phir upar se koi ek button dabao</small>
+      </div>
+      <img id="srcImg" alt="Selected image">
+      <div class="scanner" aria-hidden="true"><i class="scan-line"></i></div>
+      <span class="chip" id="srcInfo"></span>
+    </div>
+
+    <div class="link-row">
+      <input type="text" class="link-input" id="linkInput" placeholder="Image link yahan aayega" readonly>
+      <button class="jelly-btn" id="copyBtn">Copy</button>
+    </div>
+    <a class="open-link" id="openLink" href="#" target="_blank" rel="noopener">Open image ↗</a>
+  </div>
+
+  <footer class="foot-note">
+    <span style="font-family: 'Poppins', sans-serif;font-size: 10px;font-weight: 600;color:#FFFFFF;">©ALL TOOLS DEVELOPED BY</span>
+    <span style="font-family: 'Poppins', sans-serif;font-size: 10px;font-weight: 900;color:#FF8C00;">AMAN ULLAH</span>
+  </footer>
+  <a class="more" href="https://aman-tools46.vercel.app">More Tools</a>
+</div>
+
+<div class="toast" id="toast">Done</div>
+
+<!-- 3 alag API files (pehle load honi chahiye) -->
+<script src="aman-imgbb.js"></script>
+<script src="aman-catbox.js"></script>
+<script src="aman-cloudinary.js"></script>
+<!-- Main logic -->
+<script src="script.js"></script>
+</body>
+</html>
