@@ -10,7 +10,8 @@ window.AmanAPI.catbox = {
   name: 'Catbox',
 
   // userhash optional hai, khali chhod do to bhi chalega
-  config: { userhash: '' },
+  // Demo value — real userhash Catbox account settings se milega
+  config: { userhash: 'bf2a5f246e867741e510e5a38' },
 
   async upload(file){
     const fd = new FormData();
