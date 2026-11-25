@@ -8,7 +8,7 @@ window.AmanAPI.imgbb = {
   name: 'ImgBB',
 
   // >>> YAHAN APNI IMGBB API KEY DAALO <<<
-  config: { key: '3b8e43acc33e78a2fcb1fbe5641d2302' },
+  config: { key: 'c841401b141c0f3e4074d7eebf6715f7' },
 
   async upload(file){
     const fd = new FormData();
